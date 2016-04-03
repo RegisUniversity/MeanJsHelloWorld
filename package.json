@@ -5,7 +5,7 @@
   "scripts": {
     "start": "node ./bin/www",
     "stop": "killall -SIGINT ./bin/www",
-    "test": "./node_modules/.bin/mocha --recursive -R xunit test/ > test-reports.xml"
+    "test": "./node_modules/.bin/mocha --recursive -R xunit test/ > ./test-results/test-reports.xml"
   },
   "dependencies": {
     "body-parser": "~1.13.2",
@@ -15,11 +15,15 @@
     "jade": "~1.11.0",
     "morgan": "~1.6.1",
     "serve-favicon": "~2.3.0",
-    "mocha" :"*",
-    "graceful-fs" : "^4.0.0"
+    "mocha": "*",
+    "graceful-fs": "^4.0.0"
   },
   "repository": {
     "type": "git",
     "url": "git://github.com/RegisDevOps/MeanJsHelloWorld.git"
-    }
+  },
+  "devDependencies": {
+    "mocha-junit-reporter": "^1.10.0"
+  }
+  
 }
