@@ -21,7 +21,9 @@ var assert = require('assert'),
 
 describe('/', function () {
   it('should return 200', function (done) {
+    
     http.get('http://localhost:8082', function (res) {
+        this.timeout(5000); 
       assert.equal(200, res.statusCode);
       done();
     });
