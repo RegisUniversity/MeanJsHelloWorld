@@ -23,7 +23,6 @@
     "url": "git://github.com/RegisDevOps/MeanJsHelloWorld.git"
   },
   "devDependencies": {
-    "jenkins-mocha": "^2.6.0",
     "mocha-junit-reporter": "^1.10.0"
   }
 }
