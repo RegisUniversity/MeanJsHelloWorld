@@ -2,6 +2,7 @@
  * To change this license header, choose License Headers in Project Properties.
  * To change this template file, choose Tools | Templates
  * and open the template in the editor.
+ * TODO: Make the application port a configuration variable.
  */
 
 var server = require('../bin/www');
