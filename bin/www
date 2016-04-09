@@ -8,11 +8,25 @@ var app = require('../app');
 var debug = require('debug')('MeanJsHelloworld:server');
 var http = require('http');
 
+var fs;
+fs = require('fs');
+
+var configPort; 
+try {
+    var configData = fs.readFileSync('./config/runConfig.json');
+    var configuration = JSON.parse(configData);
+    configPort = configuration.port;
+} catch (e) {
+    configPort = 8082;
+}
+
+
+
 /**
  * Get port from environment and store in Express.
  */
 
-var port = normalizePort(process.env.PORT || '8082');
+var port = normalizePort(process.env.PORT || configPort);
 app.set('port', port);
 
 /**
