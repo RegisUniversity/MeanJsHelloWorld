@@ -1,5 +1,23 @@
 #!/usr/bin/env node
 
+/** 
+ * 
+ * Include AppDynamics hooks
+ * 
+ * For every Node.js application that you are instrumenting, 
+ * insert the following call in the application source code at the first line of the main module (such as the server.js file), before any other require statements: 
+ */
+
+require("appdynamics").profile({
+        controllerHostName: 'paid51.saas.appdynamics.com',
+        controllerPort: 443, // If SSL, be sure to enable the next line     controllerSslEnabled: true, // Optional - use if connecting to controller via SSL
+        accountName: 'RegisUniversityCorporation',
+        accountAccessKey: 'hhznona9phpo',
+        applicationName: 'MeanJSHelloWorld',
+        tierName: 'NodeJs1',
+        nodeName: 'process' // The controller will automatically append the node name with a unique number
+    });
+
 /**
  * Module dependencies.
  */
