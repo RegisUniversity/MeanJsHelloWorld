@@ -39,8 +39,8 @@ try {
     var path = require("path");
     console.log(". = %s", path.resolve("."));
     console.log("__dirname = %s", path.resolve(__dirname));
-    console.log("config dir = %s", path.resolve(__dirname + '/../config/runConfig.json'));
-    var configData = fs.readFileSync(__dirname + '/../config/runConfig.json');
+    console.log("config dir = %s", path.resolve(__dirname + '/../config/runconfig.json'));
+    var configData = fs.readFileSync(__dirname + '/../config/runconfig.json');
     console.log("Found config file");
     var configuration = JSON.parse(configData);
     configPort = configuration.port;
