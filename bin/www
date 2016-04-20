@@ -15,7 +15,8 @@ require("appdynamics").profile({
         accountAccessKey: 'hhznona9phpo',
         applicationName: 'MeanJSHelloWorld',
         tierName: 'NodeJs1',
-        nodeName: 'process' // The controller will automatically append the node name with a unique number
+        nodeName: 'process', // The controller will automatically append the node name with a unique number
+        debug: 'true'
     });
 
 /**
