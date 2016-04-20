@@ -31,13 +31,13 @@ fs = require('fs');
 
 var configPort; 
 try {
-    var configData = fs.readFileSync('./config/runConfig.json');
+    var configData = fs.readFileSync('../config/runConfig.json');
     console.log("Found config file");
     var configuration = JSON.parse(configData);
     configPort = configuration.port;
     console.log("Found port %s", configPort);
 } catch (e) {
-    console.log("using defaul port 8082");
+    console.log("using default port 8082");
     configPort = 8082;
 }
 
