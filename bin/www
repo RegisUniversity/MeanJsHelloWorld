@@ -31,7 +31,15 @@ fs = require('fs');
 
 var configPort; 
 try {
-    var configData = fs.readFileSync('../config/runConfig.json');
+    /** 
+     * In Node.js, __dirname is always the directory in which the currently executing script resides. 
+     * In other words, you typed __dirname into one of your script files and value would be that file's directory.
+     * By contrast, . gives you the directory from which you ran the node command in your terminal window (i.e. your working directory). 
+     */
+    var path = require("path");
+    console.log(". = %s", path.resolve("."));
+    console.log("__dirname = %s", path.resolve(__dirname));
+    var configData = fs.readFileSync(__dirname + '../config/runConfig.json');
     console.log("Found config file");
     var configuration = JSON.parse(configData);
     configPort = configuration.port;
