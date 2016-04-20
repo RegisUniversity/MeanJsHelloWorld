@@ -46,6 +46,7 @@ try {
     configPort = configuration.port;
     console.log("Found port %s", configPort);
 } catch (e) {
+    console.log(e);
     console.log("using default port 8082");
     configPort = 8082;
 }
