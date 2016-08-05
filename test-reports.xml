@@ -1,6 +1,0 @@
-[0mGET / [32m200 [0m1349.702 ms - 205[0m
-[0mGET / [32m200 [0m58.779 ms - 205[0m
-<testsuite name="Mocha Tests" tests="2" failures="0" errors="0" skipped="0" timestamp="Sun, 03 Apr 2016 21:54:55 GMT" time="1.507">
-<testcase classname="/" name="should return 200" time="1.413"/>
-<testcase classname="/" name="should say &quot;Hello, world&quot;" time="0.08"/>
-</testsuite>
