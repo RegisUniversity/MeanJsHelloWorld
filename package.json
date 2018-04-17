@@ -5,7 +5,7 @@
   "scripts": {
     "start": "node ./bin/www",
     "stop": "killall -SIGINT ./bin/www",
-    "test": "./node_modules/.bin/mocha --timeout 5000 --recursive -R xunit test/* --reporter mocha-junit-reporter --no-colors"
+    "test": "./node_modules/.bin/mocha --exit --timeout 5000 --recursive -R xunit test/* --reporter mocha-junit-reporter --no-colors"
   },
   "dependencies": {
     "body-parser": "~1.13.2",
@@ -23,6 +23,6 @@
     "url": "git://github.com/RegisDevOps/MeanJsHelloWorld.git"
   },
   "devDependencies": {
-    "mocha-junit-reporter": "^1.10.0"
+    "mocha-junit-reporter": "^1.17.0"
   }
 }
