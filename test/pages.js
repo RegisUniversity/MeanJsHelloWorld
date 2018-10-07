@@ -38,8 +38,8 @@ describe('/', function () {
       });
 
       res.on('end', function () {
-        var n = data.indexOf("Hello world");
-        assert(n > 0);
+        var n = data.indexOf("Hello World");
+	assert(n > 0);
         done();
       });
     });
