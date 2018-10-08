@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testsuites name="Mocha Tests" time="0.237" tests="2" failures="0">
+  <testsuite name="Root Suite" timestamp="2018-10-08T03:32:23" tests="0" failures="0" time="0">
+  </testsuite>
+  <testsuite name="/" timestamp="2018-10-08T03:32:23" tests="2" file="/home/osboxes/projects/MeanJsHelloWorld/test/pages.js" failures="0" time="0.237">
+    <testcase name="/ should return 200" time="0.22" classname="should return 200">
+    </testcase>
+    <testcase name="/ should say &quot;Hello, world&quot;" time="0.017" classname="should say &quot;Hello, world&quot;">
+    </testcase>
+  </testsuite>
+</testsuites>
