@@ -3,10 +3,14 @@ pipeline {
 
     stages {
         stage('Build'){
-            npm install
+            steps{
+                npm install
+            }
         }
         stage('Test'){
-            npm test
+            steps{ 
+                npm test
+            }
         }
     }
 }
