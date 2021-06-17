@@ -61,3 +61,20 @@ app.use(function(err, req, res, next) {
 
 
 module.exports = app;
+
+
+// Code Smell
+function foo(a){
+	let b = 12;
+	if(a){
+		return b;
+	}
+	return b;
+}
+
+// Bug Example
+let a = 12;
+if(a == 13){
+	for(;;){}
+}
+
